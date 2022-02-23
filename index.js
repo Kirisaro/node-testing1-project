@@ -106,9 +106,9 @@ class Seasons {
     if(this.currentSeason === 3) {
       this.currentSeason = 0
     }else {
-      this.currentSeason
+      ++this.currentSeason
+      return result
     }
-    return result
   }
 }
 

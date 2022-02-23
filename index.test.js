@@ -9,8 +9,8 @@ describe('[Exercise 1] trimProperties', () => {
     expect(actual).toEqual(expected)
   })
   test('[2] returns a copy, leaving the original object intact', () => {
-    const input = { name: '   cynthia   ' }
-    const expected = { name: 'cynthia' }
+    const input = { name: '   carlos   ' }
+    const expected = { name: 'carlos' }
     expect(utils.trimProperties(input)).toEqual(expected)
     expect(utils.trimProperties(input)).not.toBe(input)
   })
@@ -91,7 +91,7 @@ describe('[Exercise 5] Seasons', () => {
     expect(seasons.next()).toBe('summer')
   })
   test('[14] the 40th call of seasons.next returns "spring"', () => {
-    for(let i = 0; i < 39; i++){
+    for(let i = 0; i < 40; i++){
       seasons.next()
     }
     expect(seasons.next()).toBe('spring')
